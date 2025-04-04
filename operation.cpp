@@ -2,6 +2,9 @@
 #include "correct.cpp"
 bool less(std::string a, std::string b) {
     int len1 = a.length(), len2 = b.length();
+    if (a[0] == '-' && b[0] == '-') return less(b.substr(1), a.substr(1));
+    if (a[0] == '-') return true;
+    if (b[0] == '-') return false;
     if (len1 != len2) return len1 < len2;
     return a < b;
 }
