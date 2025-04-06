@@ -1,4 +1,4 @@
-#include "bigInt.cpp"
+#include "bigInt"
 void BigInt::correct() {
     bool neg = false;
     if (this->num.size() == 0) {

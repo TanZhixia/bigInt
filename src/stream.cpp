@@ -1,4 +1,4 @@
-#include "bigInt.cpp"
+#include "bigInt"
 std::ostream& operator<<(std::ostream& os, const BigInt& num) {
     os << num.num;
     return os;

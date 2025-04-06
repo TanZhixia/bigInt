@@ -51,6 +51,7 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "__assertion_handler": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "bigint": "cpp"
     }
 }

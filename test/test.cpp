@@ -1,7 +1,16 @@
 #include <iostream>
-#include "../src/bigInt.cpp"
+#include "../src/bigInt"
+using namespace std;
 int main() {
-    BigInt a("12");
-    std::cout << a << std::endl;
+    BigInt a, b;
+    cin >> a >> b;
+    cout << a + b << endl;
+    cout << a - b << endl;
+    cout << (a > b) << endl;
+    cout << (a < b) << endl;
+    cout << (a == b) << endl;
+    cout << (a != b) << endl;
+    cout << (a >= b) << endl;
+    cout << (a <= b) << endl;
     return 0;
 }
