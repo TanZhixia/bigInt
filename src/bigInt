@@ -110,4 +110,20 @@ class BigInt {
         friend std::ostream& operator<<(std::ostream& os, const BigInt& s);
         friend std::istream& operator>>(std::istream& is, BigInt& s);
 };
+BigInt operator+(const std::string& s, const BigInt& other);
+BigInt operator+(const char* s, const BigInt& other);
+BigInt operator+(const int& s, const BigInt& other);
+BigInt operator+(const long& s, const BigInt& other);
+BigInt operator+(const long long& s, const BigInt& other);
+BigInt operator+(const unsigned int& s, const BigInt& other);
+BigInt operator+(const unsigned long& s, const BigInt& other);
+BigInt operator+(const unsigned long long& s, const BigInt& other);
+BigInt operator-(const std::string& s, const BigInt& other);
+BigInt operator-(const char* s, const BigInt& other);
+BigInt operator-(const int& s, const BigInt& other);
+BigInt operator-(const long& s, const BigInt& other);
+BigInt operator-(const long long& s, const BigInt& other);
+BigInt operator-(const unsigned int& s, const BigInt& other);
+BigInt operator-(const unsigned long& s, const BigInt& other);
+BigInt operator-(const unsigned long long& s, const BigInt& other);
 #endif

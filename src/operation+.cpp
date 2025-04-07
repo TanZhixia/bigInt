@@ -32,3 +32,11 @@ BigInt BigInt::operator+(const long long& n) const { return this->operator+(std:
 BigInt BigInt::operator+(const unsigned int& n) const { return this->operator+(std::to_string(n)); }
 BigInt BigInt::operator+(const unsigned long& n) const { return this->operator+(std::to_string(n)); }
 BigInt BigInt::operator+(const unsigned long long& n) const { return this->operator+(std::to_string(n)); }
+BigInt operator+(const std::string& s, const BigInt& other) { return BigInt(s).operator+(other); }
+BigInt operator+(const char* s, const BigInt& other) { return BigInt(s).operator+(other); }
+BigInt operator+(const int& n, const BigInt& other) { return BigInt(n).operator+(other); }
+BigInt operator+(const long& n, const BigInt& other) { return BigInt(n).operator+(other); }
+BigInt operator+(const long long& n, const BigInt& other) { return BigInt(n).operator+(other); }
+BigInt operator+(const unsigned int& n, const BigInt& other) { return BigInt(n).operator+(other); }
+BigInt operator+(const unsigned long& n, const BigInt& other) { return BigInt(n).operator+(other); }
+BigInt operator+(const unsigned long long& n, const BigInt& other) { return BigInt(n).operator+(other); }
