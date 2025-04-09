@@ -52,6 +52,7 @@
         "algorithm": "cpp",
         "__assertion_handler": "cpp",
         "iostream": "cpp",
-        "bigint": "cpp"
+        "bigint": "cpp",
+        "iterator": "cpp"
     }
 }
